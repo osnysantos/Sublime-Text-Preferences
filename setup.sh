@@ -1,5 +1,8 @@
 #!/bin/bash
 
+SUBL_PATH=~/Library/Application\ Support/Sublime\ Text\ 3
+SUBL_USER_PATH=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
@@ -10,30 +13,29 @@ fi
 # Update homebrew recipes
 brew update
 
+# Install Sublime Text
 brew cask install --force sublime-text
 
 rm -r ~/.sublime-settings
 mkdir ~/.sublime-settings
 
-if [ -f ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ]; then
-  mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages ~/.sublime-text/Packages_old
+if [ -f "$SUBL_USER_PATH" ]; then
+  mv "$SUBL_PATH/Packages" ~/.sublime-text/Packages_old
 fi
 
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+mkdir -p "$SUBL_PATH"
+mkdir -p "$SUBL_PATH/Installed Packages"
+mkdir -p "$SUBL_PATH/Packages"
+mkdir -p "$SUBL_USER_PATH"
 
 curl http://sublime.wbond.net/Package\ Control.sublime-package -o ./Package\ Control.sublime-package
 
-cp Preferences.sublime-settings ~/.sublime-settings/
-cp Package\ Control.sublime-settings ~/.sublime-settings/
-cp Package\ Control.sublime-package ~/.sublime-settings/
+cp ./* ~/.sublime-settings/
 
-ln -s ~/.sublime-settings/Preferences.sublime-settings      ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-ln -s ~/.sublime-settings/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
+ln -sf ~/.sublime-settings/Preferences.sublime-settings "$SUBL_USER_PATH/Preferences.sublime-settings"
+ln -sf ~/.sublime-settings/Package\ Control.sublime-settings "$SUBL_USER_PATH/Package Control.sublime-settings"
 
-ln -s ~/.sublime-settings/Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
+ln -s ~/.sublime-settings/Package\ Control.sublime-package "$SUBL_PATH/Installed Packages/Package Control.sublime-package"
 
-# instal material theme
-git clone git@github.com:ahmedjafri/material-theme.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Material\ Theme
+# Install Material Theme
+ git clone git@github.com:ahmedjafri/material-theme.git "$SUBL_PATH/Packages/Material Theme"
