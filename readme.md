@@ -18,8 +18,8 @@ __Project Template: [example.sublime-project][5]__
 
 * An example of a project setup, inluding what to ignore
 
-[1]: https://github.com/joshnh/Sublime-Text-Preferences/blob/master/Default%20(OSX).sublime-keymap
-[2]: https://github.com/joshnh/Sublime-Text-Preferences/blob/master/Fetch.sublime-settings
-[3]: https://github.com/joshnh/Sublime-Text-Preferences/blob/master/Package%20Control.sublime-settings
-[4]: https://github.com/joshnh/Sublime-Text-Preferences/blob/master/Preferences.sublime-settings
-[5]: https://github.com/joshnh/Sublime-Text-Preferences/blob/master/example.sublime-project
+[1]: https://github.com/osnysantos/Sublime-Text-Preferences/blob/master/Default%20(OSX).sublime-keymap
+[2]: https://github.com/osnysantos/Sublime-Text-Preferences/blob/master/Fetch.sublime-settings
+[3]: https://github.com/osnysantos/Sublime-Text-Preferences/blob/master/Package%20Control.sublime-settings
+[4]: https://github.com/osnysantos/Sublime-Text-Preferences/blob/master/Preferences.sublime-settings
+[5]: https://github.com/osnysantos/Sublime-Text-Preferences/blob/master/example.sublime-project

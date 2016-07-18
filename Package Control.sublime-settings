@@ -1,16 +1,27 @@
 {
-	"installed_packages":
-	[
-		"Autoprefixer",
-		"Base16 Color Schemes",
-		"CSS Snippets",
-		"Dayle Rees Color Schemes",
-		"GitGutter",
-		"HTML Snippets",
-		"Sass",
-		"SideBarEnhancements",
-		"SublimeCodeIntel",
-		"sublimelint",
-		"Theme - Soda"
-	]
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "AdvancedNewFile",
+    "Alignment",
+    "ApplySyntax",
+    "Autoprefixer",
+    "DocBlockr",
+    "Emmet",
+    "ERB Snippets",
+    "Gist",
+    "GitGutter",
+    "Markdown Preview",
+    "MarkdownEditing",
+    "Material Theme",
+    "Modific",
+    "Package Control",
+    "Ruby on Rails snippets",
+    "Sass",
+    "SideBarEnhancements",
+    "SublimeCodeIntel",
+    "SublimeLinter"
+  ]
 }
