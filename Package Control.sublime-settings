@@ -1,27 +1,32 @@
 {
-  "in_process_packages":
-  [
-  ],
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "Alignment",
-    "ApplySyntax",
-    "Autoprefixer",
-    "DocBlockr",
-    "Emmet",
-    "ERB Snippets",
-    "Gist",
-    "GitGutter",
-    "Markdown Preview",
-    "MarkdownEditing",
-    "Material Theme",
-    "Modific",
-    "Package Control",
-    "Ruby on Rails snippets",
-    "Sass",
-    "SideBarEnhancements",
-    "SublimeCodeIntel",
-    "SublimeLinter"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"ApplySyntax",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"ERB Snippets",
+		"Gist",
+		"GitGutter",
+		"Liquid",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Material Theme",
+		"Modific",
+		"Package Control",
+		"Ruby on Rails snippets",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"WakaTime"
+	]
 }

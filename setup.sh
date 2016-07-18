@@ -16,26 +16,25 @@ brew update
 # Install Sublime Text
 brew cask install --force sublime-text
 
-rm -r ~/.sublime-settings
-mkdir ~/.sublime-settings
-
-if [ -f "$SUBL_USER_PATH" ]; then
-  mv "$SUBL_PATH/Packages" ~/.sublime-text/Packages_old
-fi
-
+# Create Sublime Text directories
 mkdir -p "$SUBL_PATH"
 mkdir -p "$SUBL_PATH/Installed Packages"
 mkdir -p "$SUBL_PATH/Packages"
 mkdir -p "$SUBL_USER_PATH"
 
-curl http://sublime.wbond.net/Package\ Control.sublime-package -o ./Package\ Control.sublime-package
+# Backup current settings
+if [ -f "$SUBL_USER_PATH" ]; then
+  mv "$SUBL_PATH/Packages" "$SUBL_PATH/Packages_old"
+  mv "$SUBL_PATH/Installed Packages" "$SUBL_PATH/Installed Packages_old"
+fi
 
-cp ./* ~/.sublime-settings/
+# Install Package Control
+curl http://sublime.wbond.net/Package\ Control.sublime-package -o \
+  "$SUBL_PATH/Installed Packages/Package Control.sublime-package"
 
-ln -sf ~/.sublime-settings/Preferences.sublime-settings "$SUBL_USER_PATH/Preferences.sublime-settings"
-ln -sf ~/.sublime-settings/Package\ Control.sublime-settings "$SUBL_USER_PATH/Package Control.sublime-settings"
-
-ln -s ~/.sublime-settings/Package\ Control.sublime-package "$SUBL_PATH/Installed Packages/Package Control.sublime-package"
+# Link ST files to this directory
+ln -sf $PWD/Preferences.sublime-settings "$SUBL_USER_PATH/Preferences.sublime-settings"
+ln -sf $PWD/Package\ Control.sublime-settings "$SUBL_USER_PATH/Package Control.sublime-settings"
 
 # Install Material Theme
  git clone git@github.com:ahmedjafri/material-theme.git "$SUBL_PATH/Packages/Material Theme"
