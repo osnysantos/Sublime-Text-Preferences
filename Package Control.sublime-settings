@@ -9,10 +9,10 @@
 		"Alignment",
 		"ApplySyntax",
 		"Autoprefixer",
+		"Babel",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"DocBlockr",
-		"EditorConfig",
 		"Emmet",
 		"ERB Snippets",
 		"Gist",
@@ -23,11 +23,13 @@
 		"Material Theme",
 		"Modific",
 		"Package Control",
+		"ReactJS",
 		"Ruby on Rails snippets",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SublimeLinter-jsxhint",
 		"WakaTime"
 	]
 }

@@ -6,7 +6,8 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"default_encoding": "UTF-8",
-	"detect_indentation": true,
+	"default_line_ending": "unix",
+	"detect_indentation": false,
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
 	"fade_fold_buttons": false,
@@ -37,7 +38,6 @@
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?_",
 	"word_wrap": true,
 	"wrap_width": 100
 }
