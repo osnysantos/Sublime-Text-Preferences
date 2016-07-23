@@ -8,6 +8,7 @@
 		"AdvancedNewFile",
 		"Alignment",
 		"ApplySyntax",
+		"AutoFileName",
 		"Autoprefixer",
 		"Babel",
 		"BracketHighlighter",
@@ -30,6 +31,7 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-jsxhint",
+		"Terminal",
 		"WakaTime"
 	]
 }
